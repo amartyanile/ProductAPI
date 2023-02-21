@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "4fa47990-d837-4266-a80d-e937cce50069",
+		"name": "APIProducts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23835623"
+	},
+	"item": [
+		{
+			"name": "http://localhost:62887/api/v1/GetCategoryNameList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:62887/api/v1/GetCategoryNameList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"GetCategoryNameList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62887/api/v1/ViewCategoryName?Catid=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:62887/api/v1/ViewCategoryName?Catid=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"ViewCategoryName"
+					],
+					"query": [
+						{
+							"key": "Catid",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62887/api/v1/AddCategoryName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"CategoryName\": \"Snacks\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:62887/api/v1/AddCategoryName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"AddCategoryName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62887/api/v1/RemoveCategoryName?Catid=3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:62887/api/v1/RemoveCategoryName?Catid=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"RemoveCategoryName"
+					],
+					"query": [
+						{
+							"key": "Catid",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62887/api/v1/UpdateCategoryName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"CatId\": 4,\r\n            \"CategoryName\": \"Snack\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:62887/api/v1/UpdateCategoryName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"UpdateCategoryName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62887/api/v1/GetProductNameList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:62887/api/v1/GetProductNameList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"GetProductNameList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62887/api/v1/ViewProductName?ProductId=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:62887/api/v1/ViewProductName?ProductId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"ViewProductName"
+					],
+					"query": [
+						{
+							"key": "ProductId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62887/api/v1/AddProductName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n           \r\n            \"ProductName\": \"Missal\",\r\n            \"CatId\": 1\r\n            \r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:62887/api/v1/AddProductName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"AddProductName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62887/api/v1/UpdateProductName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"ProductId\": 6,\r\n            \"ProductName\": \"Missals\",\r\n            \"Catid\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:62887/api/v1/UpdateProductName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"UpdateProductName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62887/api/v1/RemoveProductName?ProductId=6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:62887/api/v1/RemoveProductName?ProductId=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62887",
+					"path": [
+						"api",
+						"v1",
+						"RemoveProductName"
+					],
+					"query": [
+						{
+							"key": "ProductId",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
